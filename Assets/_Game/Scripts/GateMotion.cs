@@ -5,6 +5,7 @@ using UnityEngine;
 public class GateMotion : MonoBehaviour
 {
     public float Speed;
+    private const float RemoveAtZ = -10f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class GateMotion : MonoBehaviour
     {
         transform.position -= transform.forward * Speed * Time.deltaTime;
 
-        if (transform.position.z <= 0.0f)
+        if (transform.position.z <= RemoveAtZ)
         {
             Destroy(gameObject);
         }

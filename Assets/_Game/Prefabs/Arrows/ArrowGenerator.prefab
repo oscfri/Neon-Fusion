@@ -47,9 +47,10 @@ MonoBehaviour:
     type: 3}
   PrefabDown: {fileID: 6451794360269121567, guid: d8080f57f396ab647acd450615daa64f,
     type: 3}
-  PrefabLeft: {fileID: 8658046801869598878, guid: b25ef4012b2a7d6499ff4b5baa15718f,
+  PrefabLeft: {fileID: 2959002361041771756, guid: b25ef4012b2a7d6499ff4b5baa15718f,
     type: 3}
   PrefabRight: {fileID: 6838322427252306794, guid: b12d332315912fd4095309df4cbcf486,
     type: 3}
   PrefabSpecial: {fileID: 8961296956931015662, guid: 6200f04a9aae5e74d9a70ca449d45d06,
     type: 3}
+  ListSpawnedArrows: []

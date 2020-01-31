@@ -4,34 +4,12 @@ using System.Collections;
 public class GateSpawner : MonoBehaviour
 {
     public GameObject Gate;
-    public float BeatsPerMinute;
 
-    float timeToBeat = 0.0f;
+    public Transform LastGateTransform;
 
-    // Use this for initialization
-    void Start()
+    public void SpawnGate()
     {
-        ResetTimer();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        timeToBeat -= Time.deltaTime;
-        if (timeToBeat <= 0.0f)
-        {
-            SpawnGate();
-            ResetTimer();
-        }
-    }
-
-    private void SpawnGate()
-    {
-        Instantiate(Gate, transform);
-    }
-
-    private void ResetTimer()
-    {
-        timeToBeat += 60.0f / BeatsPerMinute;
+        GameObject spawned = Instantiate(Gate, transform);
+        LastGateTransform = spawned.transform;
     }
 }

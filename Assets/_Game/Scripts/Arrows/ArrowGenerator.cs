@@ -13,22 +13,20 @@ public class ArrowGenerator : MonoBehaviour
     [HideInInspector]
     public List<Arrow> ListSpawnedArrows;
 
+    private GateSpawner gateSpawner;
+
 
     void Start()
     {
         ListSpawnedArrows = new List<Arrow>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        gateSpawner = FindObjectOfType<GateSpawner>();
     }
 
     public void Spawn(Direction direction)
     {
         Arrow type = GetArrowType(direction);
-        Arrow arrow = Instantiate(type);
+        Arrow arrow = Instantiate(type, transform);
+        arrow.transform.parent = gateSpawner.LastGateTransform;
 
         ListSpawnedArrows.Add(arrow);
     }
