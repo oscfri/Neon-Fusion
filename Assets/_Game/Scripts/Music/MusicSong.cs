@@ -14,6 +14,8 @@ public class MusicSong : MonoBehaviour
     public List<int> ListBeats; //Beats required to spawn
     public List<Direction> ListDirections; //Beats
 
+    //public List<Tuple<int, Direction>> ListBeats;
+
     void Start()
     {
         
