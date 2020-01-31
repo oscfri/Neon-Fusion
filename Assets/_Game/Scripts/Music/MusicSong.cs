@@ -38,6 +38,6 @@ public class MusicSong : MonoBehaviour
             currentIndex++;
             return Tuple.Create(true, direction);
         }
-        return Tuple.Create(false, Direction.down);
+        return Tuple.Create(false, Direction.none);
     }
 }

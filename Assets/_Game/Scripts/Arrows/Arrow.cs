@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum Direction
 {
-    up, down, left, right, special
+    up, down, left, right, special, none
 }
 public class Arrow : MonoBehaviour
 {
