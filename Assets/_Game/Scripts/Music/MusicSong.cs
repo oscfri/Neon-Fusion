@@ -1,27 +1,41 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
-public enum Beat
-{
-    beat4th,
-    beat2th,
-    beatwhole,
-}
+using System;
 
 public class MusicSong : MonoBehaviour
 {
     public AudioClip song;
+    int currentBeat = 0;
+    private int currentIndex = 0;
 
-    public List<float> ListBeats;
+    public int CurrentIndex { get { return currentIndex; } }
+
+    public List<int> ListBeats; //Beats required to spawn
+    public List<Direction> ListDirections; //Beats
 
     void Start()
     {
-
+        
     }
 
-    public void Beat()
+    public void Reset()
     {
-        //Debug.Log("MusicSong beat");
+        currentIndex = 0;
+        currentBeat = 0;
+    }
+
+    public Tuple<bool, Direction> GetAndCheckBeat()
+    {
+        currentBeat++;
+
+        if (currentBeat >= ListBeats[currentIndex])
+        {
+            currentBeat = 0;
+            var direction = ListDirections[currentIndex];
+            currentIndex++;
+            return Tuple.Create(true, direction);
+        }
+        return Tuple.Create(false, Direction.down);
     }
 }
