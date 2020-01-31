@@ -13,6 +13,7 @@ public class ArrowGenerator : MonoBehaviour
     [HideInInspector]
     public List<Arrow> ListSpawnedArrows;
 
+
     void Start()
     {
         ListSpawnedArrows = new List<Arrow>();

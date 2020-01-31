@@ -15,7 +15,6 @@ public class BeatCountdown : MonoBehaviour
 
     void Start()
     {
-        HasReachedTime = new UnityEvent();
     }
 
     public void BeatStart()
