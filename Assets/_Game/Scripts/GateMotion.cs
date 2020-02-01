@@ -5,7 +5,7 @@ using UnityEngine;
 public class GateMotion : MonoBehaviour
 {
     public float Speed;
-    private const float RemoveAtZ = -10f;
+    private const float RemoveAtZ = -5f;
     private bool hasScored = false;
 
     private ScoreCounter scoreCounter;
@@ -32,14 +32,14 @@ public class GateMotion : MonoBehaviour
         }
         else if (transform.position.z <= 0.0)
         {
+            var lightBeat = lightComponent.GetComponent<LightBeat>();
+            lightBeat.Active = false;
             if (scoreCounter != null && !hasScored)
             {
                 hasScored = true;
                 scoreCounter.FailedScore();
+                lightComponent.intensity = 0.0f;
             }
-            var lightBeat = lightComponent.GetComponent<LightBeat>();
-            lightBeat.Active = false;
-            //lightComponent.intensity -= 1.0f * Time.deltaTime;
             // lightComponent.range -= 1.0f * Time.deltaTime;
         }
     }

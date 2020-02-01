@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetChromatic: 0.5
-  TargetBloom: 40
+  TargetBloom: 20
 --- !u!1 &2883294785774275653
 GameObject:
   m_ObjectHideFlags: 0

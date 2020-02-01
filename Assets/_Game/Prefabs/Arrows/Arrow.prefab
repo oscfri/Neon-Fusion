@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 0
   materialNone: {fileID: 2100000, guid: 6cf0c64da1a9285499b5e36449a86a64, type: 2}
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-752990044284217645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,8 +73,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512625a0fc92f47e3829917f0ca316fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShortValue: 0.5
-  LongValue: 1
+  ShortValue: 0.2
+  LongValue: 0.8
   Decay: 0.01
   LogValue: 0
   Value: 0
