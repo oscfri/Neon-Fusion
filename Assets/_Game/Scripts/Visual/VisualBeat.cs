@@ -51,6 +51,5 @@ public class VisualBeat : MonoBehaviour
         {
             Value = LongValue;
         }
-
     }
 }

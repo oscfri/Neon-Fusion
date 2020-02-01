@@ -42,7 +42,15 @@ public class ArrowChecker : MonoBehaviour
             if (PlayerInput.Direction == arrow.direction) {
                 scoreCounter.AddScore(arrow.direction, PlayerInput.PlayerNr);
                 ListArrows.RemoveAt(i);
-                arrow.Scored(Explosion);
+
+                if (Explosion)
+                {
+                    var explosion = Instantiate(Explosion, arrow.transform.position + transform.up * 2.0f, Quaternion.identity, transform);
+                    var rendererComponent = explosion.GetComponent<Renderer>();
+                    rendererComponent.material.SetColor("_EmissionColor", new Color(arrow.color.r, arrow.color.g, arrow.color.b));
+                }
+
+                arrow.Scored();
             }
         }
     }
