@@ -134,6 +134,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437551195713064779, guid: 01a4bdf0eb660884b994de3bc314388d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1437551195853493837, guid: 01a4bdf0eb660884b994de3bc314388d,
         type: 3}
       propertyPath: m_IsActive
@@ -244,6 +249,11 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2883294785774275659, guid: 6fe0d964dd6caea4cb91acd0d641d2f7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2883294786382438325, guid: 6fe0d964dd6caea4cb91acd0d641d2f7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -316,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 6659582577108369769, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6659582577108369782, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
@@ -464,3 +474,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01a4bdf0eb660884b994de3bc314388d, type: 3}
+--- !u!1 &1370895553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2883294785330532258, guid: 6fe0d964dd6caea4cb91acd0d641d2f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 459083453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1370895556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370895553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31041558616a44829e982a566f98fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetChromatic: 1
+  TargetBloom: 100
+--- !u!114 &1370895557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370895553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512625a0fc92f47e3829917f0ca316fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShortValue: 0.1
+  LongValue: 1
+  Decay: 0.1
+  LogValue: 0
+  Value: 0
