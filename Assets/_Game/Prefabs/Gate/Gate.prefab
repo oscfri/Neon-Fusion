@@ -123,8 +123,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
-  m_Range: 5
+  m_Intensity: 4
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -184,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f63cb2a860e4ad7a5c0c2fb7a52e0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetIntensity: 4
-  TargetRange: 8
+  TargetIntensity: 5
+  TargetRange: 50
 --- !u!114 &5512991996419687642
 MonoBehaviour:
   m_ObjectHideFlags: 0
