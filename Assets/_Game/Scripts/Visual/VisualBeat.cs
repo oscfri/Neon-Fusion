@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class VisualBeat : MonoBehaviour
 {
-    public float ShortValue = 2.0f;
-    public float LongValue = 5.0f;
-    public float Decay = 0.5f;
+    public float ShortValue = 0.5f;
+    public float LongValue = 1.0f;
+    public float Decay = 0.01f;
 
     public float LogValue = 0.0f;
     public float Value = 0.0f;
