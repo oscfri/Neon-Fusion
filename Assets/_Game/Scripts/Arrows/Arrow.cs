@@ -73,6 +73,7 @@ public class Arrow : MonoBehaviour
     public void Scored()
     {
         state = ArrowState.destroyed;
+        Destroy(gameObject.transform.parent.gameObject);
         Destroy(gameObject);
     }
 }
