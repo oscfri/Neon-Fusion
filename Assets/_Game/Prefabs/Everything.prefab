@@ -96,7 +96,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &2857049727302879536
+--- !u!82 &2226746247598704592
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,7 +192,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &2226746247598704592
+--- !u!82 &2857049727302879536
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -871,7 +871,7 @@ PrefabInstance:
     - target: {fileID: 2196606022357279546, guid: 6567c945d10251347a3f41ec925be549,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.14
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 2196606022357279546, guid: 6567c945d10251347a3f41ec925be549,
         type: 3}
@@ -886,7 +886,7 @@ PrefabInstance:
     - target: {fileID: 2196606022357279546, guid: 6567c945d10251347a3f41ec925be549,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.76
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 2196606022357279546, guid: 6567c945d10251347a3f41ec925be549,
         type: 3}
