@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2883294785330532257}
   - component: {fileID: 2883294785330532256}
-  - component: {fileID: 1370895556}
-  - component: {fileID: 1370895557}
   m_Layer: 0
   m_Name: Post_proccesing
   m_TagString: Untagged
@@ -50,37 +48,6 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: ce2e72bb267d7094181c10e5674d843b, type: 2}
---- !u!114 &1370895556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2883294785330532258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f31041558616a44829e982a566f98fb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TargetChromatic: 1
-  TargetBloom: 50
---- !u!114 &1370895557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2883294785330532258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512625a0fc92f47e3829917f0ca316fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShortValue: 0.1
-  LongValue: 1
-  Decay: 0.1
-  LogValue: 0
-  Value: 0
 --- !u!1 &2883294785774275653
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +91,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
