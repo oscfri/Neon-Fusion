@@ -141,6 +141,21 @@ PrefabInstance:
       propertyPath: direction
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 473904977100799691, guid: 6ee15255a7202664caac11d7a413e670,
+        type: 3}
+      propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473904977100799691, guid: 6ee15255a7202664caac11d7a413e670,
+        type: 3}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473904977100799691, guid: 6ee15255a7202664caac11d7a413e670,
+        type: 3}
+      propertyPath: color.g
+      value: 0.09019608
+      objectReference: {fileID: 0}
     - target: {fileID: 4409414177636572715, guid: 6ee15255a7202664caac11d7a413e670,
         type: 3}
       propertyPath: m_LocalPosition.x
