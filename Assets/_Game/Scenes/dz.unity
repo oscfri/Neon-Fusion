@@ -212,6 +212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b80827d7f8709a4f9c332f5d09663af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!23 &129700012 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8469631087027157328, guid: 01a4bdf0eb660884b994de3bc314388d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1997659175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &503227601
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +383,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!23 &804578863 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4041531833110994216, guid: 01a4bdf0eb660884b994de3bc314388d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083529319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &901642492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -446,6 +458,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fe0d964dd6caea4cb91acd0d641d2f7, type: 3}
+--- !u!23 &1003398177 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3170836440512221156, guid: 01a4bdf0eb660884b994de3bc314388d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1997659175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1009550538
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +538,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009550538}
   m_CullTransparentMesh: 0
+--- !u!23 &1468956636 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3170836440512221156, guid: 01a4bdf0eb660884b994de3bc314388d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083529319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1581095761 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8469631087027157328, guid: 01a4bdf0eb660884b994de3bc314388d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083529319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1874740574 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4041531833110994216, guid: 01a4bdf0eb660884b994de3bc314388d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1997659175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1997659175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -625,6 +661,11 @@ PrefabInstance:
     - target: {fileID: 6976876422473051644, guid: 01a4bdf0eb660884b994de3bc314388d,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469631087027157328, guid: 01a4bdf0eb660884b994de3bc314388d,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -740,6 +781,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2628508645841464823, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ListRenders.Array.data[0]
+      value: 
+      objectReference: {fileID: 129700012}
+    - target: {fileID: 2628508645841464823, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ListRenders.Array.data[1]
+      value: 
+      objectReference: {fileID: 1874740574}
+    - target: {fileID: 2628508645841464823, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ListRenders.Array.data[2]
+      value: 
+      objectReference: {fileID: 1003398177}
+    - target: {fileID: 2683559957265628452, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ListRenders.Array.data[0]
+      value: 
+      objectReference: {fileID: 1581095761}
+    - target: {fileID: 2683559957265628452, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ListRenders.Array.data[1]
+      value: 
+      objectReference: {fileID: 804578863}
+    - target: {fileID: 2683559957265628452, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ListRenders.Array.data[2]
+      value: 
+      objectReference: {fileID: 1468956636}
     - target: {fileID: 7790888632682170883, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
       propertyPath: m_Name
