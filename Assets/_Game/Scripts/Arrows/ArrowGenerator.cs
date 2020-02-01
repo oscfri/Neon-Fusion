@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ArrowGenerator : MonoBehaviour
 {
+    [SerializeField]
+    private ArrowChecker ArrowChecker;
+    public GateSpawner gateSpawner;
+
     public Arrow PrefabUp;
     public Arrow PrefabDown;
     public Arrow PrefabLeft;
@@ -13,19 +17,16 @@ public class ArrowGenerator : MonoBehaviour
     [HideInInspector]
     public List<Arrow> ListSpawnedArrows;
 
-    private GateSpawner gateSpawner;
-
-
     void Start()
     {
         ListSpawnedArrows = new List<Arrow>();
-        gateSpawner = FindObjectOfType<GateSpawner>();
     }
 
     public void Spawn(Direction direction)
     {
         Arrow type = GetArrowType(direction);
         Arrow arrow = Instantiate(type, transform);
+        arrow.SetArrowChecker(ArrowChecker);
         arrow.transform.parent = gateSpawner.LastGateTransform;
 
         ListSpawnedArrows.Add(arrow);

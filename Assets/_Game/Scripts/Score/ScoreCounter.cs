@@ -7,14 +7,24 @@ public class ScoreCounter : MonoBehaviour
 
     private float scorePerHit = 1f;
     private float scorePerMultiplier = 10f;
+    private float scoreCompletedTower = 40f;
 
     private float multiplier = 1f;
     private float multiplierAdd = 0.1f;
 
-
     public void AddScore(Direction direction)
     {
         Score += GetScore(direction);
+    }
+
+    public void AddScoreCompletedTower()
+    {
+        Score += scoreCompletedTower;
+    }
+
+    public void FailedScore()
+    {
+        multiplier = 1.0f;
     }
 
     private void IncreaseMultiplier()

@@ -8,19 +8,19 @@ public class BeatCounter : MonoBehaviour
     public int BeatsForLong = 2;
 
     private MusicPlayer musicPlayer;
-    private GateSpawner gateSpawner;
+    public GateSpawner gateSpawnerP1;
+    public GateSpawner gateSpawnerP2;
 
     // Use this for initialization
     void Start()
     {
         musicPlayer = FindObjectOfType<MusicPlayer>();
-        gateSpawner = FindObjectOfType<GateSpawner>();
-        //BeatCountdown.HasReachedTime.AddListener(Beat);
     }
 
     public void Beat()
     {
         musicPlayer.Beat();
-        gateSpawner.SpawnGate();
+        gateSpawnerP1.SpawnGate();
+        gateSpawnerP2.SpawnGate();
     }
 }

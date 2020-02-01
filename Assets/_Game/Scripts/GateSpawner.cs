@@ -5,7 +5,8 @@ public class GateSpawner : MonoBehaviour
 {
     public GameObject Gate;
 
-    public Transform LastGateTransform;
+    public Transform LastGateTransform { get; private set; }
+
 
     public void SpawnGate()
     {

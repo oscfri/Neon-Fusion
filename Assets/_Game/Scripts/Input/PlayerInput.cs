@@ -15,9 +15,16 @@ public class PlayerInput : MonoBehaviour
     string KeyRight;
     string KeySpecial;
 
+    public Direction Direction { get; private set; }
+
     void Start()
     {
         SetNames();
+    }
+
+    private void Update()
+    {
+        Direction = GetDirectionPressed();
     }
 
     private void SetNames()
@@ -28,7 +35,6 @@ public class PlayerInput : MonoBehaviour
         KeyLeft = "Left" + suffix;
         KeyRight = "Right" + suffix;
         KeySpecial = "Special" + suffix;
-
     }
 
     public bool CheckDirection(Direction direction)
@@ -39,27 +45,27 @@ public class PlayerInput : MonoBehaviour
 
     private Direction GetDirectionPressed()
     {
-        if (Input.GetKey(KeyUp))
+        if (Input.GetButton(KeyUp))
         {
             return Direction.up;
         }
 
-        if (Input.GetKey(KeyDown))
+        if (Input.GetButton(KeyDown))
         {
             return Direction.down;
         }
 
-        if (Input.GetKey(KeyLeft))
+        if (Input.GetButton(KeyLeft))
         {
             return Direction.left;
         }
 
-        if (Input.GetKey(KeyRight))
+        if (Input.GetButton(KeyRight))
         {
             return Direction.right;
         }
 
-        if (Input.GetKey(KeySpecial))
+        if (Input.GetButton(KeySpecial))
         {
             return Direction.special;
         }

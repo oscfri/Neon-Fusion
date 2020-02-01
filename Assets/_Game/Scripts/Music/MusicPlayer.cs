@@ -6,14 +6,14 @@ public class MusicPlayer : MonoBehaviour
     private AudioSource audioSource;
     private BeatCountdown beatCountdown;
     private MusicSong musicSong;
-    private ArrowGenerator arrowGenerator;
+    public ArrowGenerator arrowGeneratorP1;
+    public ArrowGenerator arrowGeneratorP2;
 
     // Use this for initialization
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         beatCountdown = FindObjectOfType<BeatCountdown>();
-        arrowGenerator = FindObjectOfType<ArrowGenerator>();
     }
 
     public void Play(MusicSong musicSong)
@@ -38,7 +38,8 @@ public class MusicPlayer : MonoBehaviour
         var spawn = musicSong.GetAndCheckBeat();
         if (spawn.Item1 == true)
         {
-            arrowGenerator.Spawn(spawn.Item2);
+            arrowGeneratorP1.Spawn(spawn.Item2);
+            arrowGeneratorP2.Spawn(spawn.Item2);
 
             if (musicSong.CurrentIndex >= musicSong.ListBeats.Count)
             {
