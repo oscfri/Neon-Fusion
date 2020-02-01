@@ -11,7 +11,7 @@ public class CameraShake : MonoBehaviour
 	private float shakeDuration = 0f;
 
 	// Amplitude of the shake. A larger value shakes the camera harder.
-	private float shakeAmount = 0.015f;
+	private float shakeAmount = 0.030f; //Default 0.015f
 	private float shakeAmountMultiplied = 0.015f;
 	private float decreaseFactor = 1.0f;
 	private float timePerShake = 0.35f;

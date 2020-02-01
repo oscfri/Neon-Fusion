@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: forecieldmaterial
+  m_Name: ForceLeft
   m_Shader: {fileID: -6465566751694194690, guid: 6c2091c5634bb0a4a922bde8dafb10ff,
     type: 3}
   m_ShaderKeywords: 
@@ -34,4 +34,4 @@ Material:
     - Vector1_9B140170: 0
     - Vector1_B12AEDD5: 0
     m_Colors:
-    - Color_4358042F: {r: 0.6650944, g: 0.9689811, b: 1, a: 0}
+    - Color_4358042F: {r: 1, g: 0.09019608, b: 0, a: 0}

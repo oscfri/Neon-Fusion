@@ -16,13 +16,14 @@ public class PlayerInput : MonoBehaviour
     string KeySpecial;
 
     private ColorSelector colorSelector;
-
+    private ColorForcefield colorForcefield;
 
     public Direction Direction { get; private set; }
 
     void Start()
     {
         colorSelector = GetComponentInChildren<ColorSelector>();
+        colorForcefield = GetComponentInChildren<ColorForcefield>();
         SetNames();
     }
 
@@ -30,6 +31,7 @@ public class PlayerInput : MonoBehaviour
     {
         Direction = GetDirectionPressed();
         colorSelector.ChangeDirection(Direction);
+        colorForcefield.ChangeDirection(Direction);
     }
 
     private void SetNames()
