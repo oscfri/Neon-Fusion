@@ -7,6 +7,7 @@ public class ArrowChecker : MonoBehaviour
     private List<Arrow> ListArrows;
     private ScoreCounter scoreCounter;
 
+    public ParticleSystem Explosion;
     public PlayerInput PlayerInput;
 
     public float Zinside;
@@ -41,7 +42,7 @@ public class ArrowChecker : MonoBehaviour
             if (PlayerInput.Direction == arrow.direction) {
                 scoreCounter.AddScore(arrow.direction, PlayerInput.PlayerNr);
                 ListArrows.RemoveAt(i);
-                arrow.Scored();
+                arrow.Scored(Explosion);
             }
         }
     }
