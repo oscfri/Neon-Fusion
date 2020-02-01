@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254ba0ca4f2c94233b1bf9137b1ccac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColorId: _Color
+  ColorId: _BaseColor
 --- !u!114 &6079698649270793979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,9 +73,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512625a0fc92f47e3829917f0ca316fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShortValue: 0.4
+  ShortValue: 0.2
   LongValue: 1
-  Decay: 0.01
+  Decay: 0.1
   LogValue: 0
   Value: 0
 --- !u!1 &8562545710836385483
