@@ -14,7 +14,7 @@ public class Emission : MonoBehaviour
     void Start()
     {
         visualBeat = GetComponent<VisualBeat>();
-        rend = GetComponent<Renderer>();
+        rend = GetComponentInChildren<Renderer>();
         originalColor = rend.material.GetColor(ColorId);
     }
 
