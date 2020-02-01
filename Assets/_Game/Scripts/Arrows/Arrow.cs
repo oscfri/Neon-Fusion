@@ -20,6 +20,7 @@ public class Arrow : MonoBehaviour
     public Direction direction;
     private ArrowChecker arrowChecker;
     public Material materialNone;
+    public Color color;
 
     private ArrowState state;
 
