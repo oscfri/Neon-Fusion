@@ -137,3 +137,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
+  materialNone: {fileID: 2100000, guid: 6cf0c64da1a9285499b5e36449a86a64, type: 2}
