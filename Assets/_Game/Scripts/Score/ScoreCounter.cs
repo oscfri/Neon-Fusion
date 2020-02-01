@@ -14,6 +14,9 @@ public class ScoreCounter : MonoBehaviour
     private float multiplier = 1f;
     private float multiplierAdd = 0.1f;
 
+    public CameraShake cameraShakeP1;
+    public CameraShake cameraShakeP2;
+
     public void AddScore(Direction direction, int playerNr)
     {
         var amount = GetScore(direction);
@@ -23,11 +26,13 @@ public class ScoreCounter : MonoBehaviour
         {
             ScoreP1 += amount;
             Debug.Log("P1 Score: " + ScoreP1);
+            cameraShakeP1.Shake();
         }
         else
         {
             ScoreP2 += amount;
             Debug.Log("P2 Score: " + ScoreP2);
+            cameraShakeP1.Shake();
         }
         Debug.Log("Score: " + Score);
     }
