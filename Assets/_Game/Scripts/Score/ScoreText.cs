@@ -1,30 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
-public class ColorSelector : MonoBehaviour
+public class ScoreText : MonoBehaviour
 {
-    public Material ColorLeft;
-    public Material ColorRight;
-    public Material ColorUp;
-    public Material ColorDown;
-    public Material ColorSpecial;
-    public Material ColorNone;
+    TextMesh text;
 
-    MeshRenderer rend;
+    public Color ColorLeft;
+    public Color ColorRight;
+    public Color ColorUp;
+    public Color ColorDown;
+    public Color ColorSpecial;
+    public Color ColorNone;
 
     // Use this for initialization
     void Start()
     {
-        rend = GetComponentInChildren<MeshRenderer>();
+        text = GetComponent<TextMesh>();
+    }
+
+    public void SetScore(string score)
+    {
+        this.text.text = score.ToString();
     }
 
     public void ChangeDirection(Direction dir)
     {
-        rend.material = GetMat(dir);
+        this.text.color = GetColorDir(dir);
     }
 
-    private Material GetMat(Direction direction)
+    private Color GetColorDir(Direction direction)
     {
         switch (direction)
         {

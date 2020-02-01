@@ -5,7 +5,7 @@ using UnityEngine;
 public class GateMotion : MonoBehaviour
 {
     public float Speed;
-    private const float RemoveAtZ = -0.2f;
+    private const float RemoveAtZ = -1.6f;
     private bool hasScored = false;
 
     private ScoreCounter scoreCounter;
