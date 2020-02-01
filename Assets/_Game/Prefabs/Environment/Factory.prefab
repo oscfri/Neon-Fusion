@@ -494,10 +494,20 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: c361d0300f8e8774ea78c947eb0a925f, type: 2}
+    - target: {fileID: -1504981713932161579, guid: f7c1dcc7afe82714b8c6251162cbb691,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: f7c1dcc7afe82714b8c6251162cbb691,
         type: 3}
       propertyPath: m_Name
       value: room_01
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f7c1dcc7afe82714b8c6251162cbb691,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7c1dcc7afe82714b8c6251162cbb691, type: 3}
