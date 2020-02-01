@@ -6,7 +6,8 @@ using System.Collections;
 /// </summary>
 public class NewGamePlay : MonoBehaviour
 {
-    public MusicSong musicSong;
+    public MusicSong musicSongP1;
+    public MusicSong musicSongP2;
     private bool hasStarted = false;
     MusicPlayer musicPlayer;
 
@@ -21,7 +22,7 @@ public class NewGamePlay : MonoBehaviour
         if (!hasStarted)
         {
             hasStarted = true;
-            musicPlayer.Play(musicSong);
+            musicPlayer.Play(musicSongP1, musicSongP2);
         }
     }
 }

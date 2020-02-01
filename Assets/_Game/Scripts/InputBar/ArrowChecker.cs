@@ -18,6 +18,11 @@ public class ArrowChecker : MonoBehaviour
         scoreCounter = FindObjectOfType<ScoreCounter>();
     }
 
+    private void Update()
+    {
+        CheckArrows();
+    }
+
     public void AddArrow(Arrow arrow)
     {
         ListArrows.Add(arrow);
@@ -30,11 +35,12 @@ public class ArrowChecker : MonoBehaviour
 
     private void CheckArrows()
     {
-        foreach (var arrow in ListArrows)
+        for (int i = 0; i < ListArrows.Count; i++)
         {
+            var arrow = ListArrows[i];
             if (PlayerInput.Direction == arrow.direction) {
-                scoreCounter.AddScore(arrow.direction);
-                ListArrows.Remove(arrow);
+                scoreCounter.AddScore(arrow.direction, PlayerInput.PlayerNr);
+                ListArrows.RemoveAt(i);
                 arrow.Scored();
             }
         }

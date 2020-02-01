@@ -11,7 +11,8 @@ enum ArrowState
 {
     idle,
     inside,
-    outside
+    outside,
+    destroyed
 }
 
 public class Arrow : MonoBehaviour
@@ -35,7 +36,7 @@ public class Arrow : MonoBehaviour
 
     void Update()
     {
-        if (arrowChecker != null)
+        if (arrowChecker != null && state != ArrowState.destroyed)
         {
             if (state == ArrowState.idle)
             {
@@ -67,6 +68,7 @@ public class Arrow : MonoBehaviour
     /// </summary>
     public void Scored()
     {
-        Destroy(gameObject);
+        state = ArrowState.destroyed;
+        Destroy(this);
     }
 }

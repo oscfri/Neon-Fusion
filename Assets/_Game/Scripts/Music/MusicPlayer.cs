@@ -5,7 +5,8 @@ public class MusicPlayer : MonoBehaviour
 {
     private AudioSource audioSource;
     private BeatCountdown beatCountdown;
-    private MusicSong musicSong;
+    private MusicSong musicSongP1;
+    private MusicSong musicSongP2;
     public ArrowGenerator arrowGeneratorP1;
     public ArrowGenerator arrowGeneratorP2;
 
@@ -16,12 +17,14 @@ public class MusicPlayer : MonoBehaviour
         beatCountdown = FindObjectOfType<BeatCountdown>();
     }
 
-    public void Play(MusicSong musicSong)
+    public void Play(MusicSong musicSongP1, MusicSong musicSongP2)
     {
         Debug.Log("PlayMusicSong");
-        this.musicSong = musicSong;
-        this.musicSong.Reset();
-        audioSource.clip = musicSong.song;
+        this.musicSongP1 = musicSongP1;
+        this.musicSongP2 = musicSongP2;
+        this.musicSongP1.Reset();
+        this.musicSongP2.Reset();
+        audioSource.clip = musicSongP1.song;
         audioSource.Play();
         beatCountdown.BeatStart();
     }
@@ -35,11 +38,16 @@ public class MusicPlayer : MonoBehaviour
 
     public void Beat()
     {
+        BeatPlayer(musicSongP1, arrowGeneratorP1);
+        BeatPlayer(musicSongP2, arrowGeneratorP2);
+    }
+
+    private void BeatPlayer(MusicSong musicSong, ArrowGenerator arrowGenerator)
+    {
         var spawn = musicSong.GetAndCheckBeat();
         if (spawn.Item1 == true)
         {
-            arrowGeneratorP1.Spawn(spawn.Item2);
-            arrowGeneratorP2.Spawn(spawn.Item2);
+            arrowGenerator.Spawn(spawn.Item2);
 
             if (musicSong.CurrentIndex >= musicSong.ListBeats.Count)
             {
