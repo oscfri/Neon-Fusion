@@ -33,7 +33,7 @@ public class VisualBeat : MonoBehaviour
         }
         else
         {
-            SetValue(Mathf.Log(ShortValue));
+            SetValue(Mathf.Log(Value + ShortValue));
         }
     }
 

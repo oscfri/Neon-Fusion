@@ -29,11 +29,7 @@ public class PlayerInput : MonoBehaviour
     private void Update()
     {
         Direction = GetDirectionPressed();
-
-        if (Direction != Direction.none)
-        {
-            colorSelector.ChangeDirection(Direction);
-        }
+        colorSelector.ChangeDirection(Direction);
     }
 
     private void SetNames()
@@ -44,12 +40,6 @@ public class PlayerInput : MonoBehaviour
         KeyLeft = "Left" + suffix;
         KeyRight = "Right" + suffix;
         KeySpecial = "Special" + suffix;
-    }
-
-    public bool CheckDirection(Direction direction)
-    {
-        var dir = GetDirectionPressed();
-        return dir == direction;
     }
 
     private Direction GetDirectionPressed()

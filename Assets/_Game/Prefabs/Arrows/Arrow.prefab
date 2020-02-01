@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4409414177636572715}
   - component: {fileID: 473904977100799691}
+  - component: {fileID: -752990044284217645}
+  - component: {fileID: 2968793158990848962}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -45,3 +47,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 0
   materialNone: {fileID: 2100000, guid: 6cf0c64da1a9285499b5e36449a86a64, type: 2}
+--- !u!114 &-752990044284217645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9204202172465513792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254ba0ca4f2c94233b1bf9137b1ccac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ColorId: _BaseColor
+--- !u!114 &2968793158990848962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9204202172465513792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512625a0fc92f47e3829917f0ca316fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShortValue: 0.5
+  LongValue: 1
+  Decay: 0.01
+  LogValue: 0
+  Value: 0
