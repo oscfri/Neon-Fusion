@@ -19,6 +19,7 @@ public class Arrow : MonoBehaviour
 {
     public Direction direction;
     private ArrowChecker arrowChecker;
+    public Material materialNone;
 
     private ArrowState state;
 
@@ -61,6 +62,7 @@ public class Arrow : MonoBehaviour
     {
         //Todo: add effects when outside
         state = ArrowState.outside;
+        GetComponentInChildren<MeshRenderer>().material = materialNone;
         arrowChecker.RemoveArrow(this);
     }
 
@@ -70,6 +72,6 @@ public class Arrow : MonoBehaviour
     public void Scored()
     {
         state = ArrowState.destroyed;
-        Destroy(this);
+        Destroy(gameObject);
     }
 }

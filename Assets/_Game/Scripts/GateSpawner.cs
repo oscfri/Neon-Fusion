@@ -18,7 +18,7 @@ public class GateSpawner : MonoBehaviour
 
     public void SetMaterial(Material mat)
     {
-        MeshRenderer renderer = GetComponentInChildren<MeshRenderer>();
+        MeshRenderer renderer = LastGateTransform.GetComponentInChildren<MeshRenderer>();
         renderer.material = mat;
     }
 
