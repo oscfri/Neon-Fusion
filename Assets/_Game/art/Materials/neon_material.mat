@@ -21,4 +21,6 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats: []
-    m_Colors: []
+    m_Colors:
+    - Color_3FA95EF5: {r: 1, g: 0, b: 0.878747, a: 0}
+    - Color_B5719246: {r: 0.7185574, g: 0, b: 1, a: 0}
