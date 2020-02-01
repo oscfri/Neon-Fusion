@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.5
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -244,6 +244,16 @@ PrefabInstance:
       propertyPath: weight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2883294785330532256, guid: 6fe0d964dd6caea4cb91acd0d641d2f7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883294785774275653, guid: 6fe0d964dd6caea4cb91acd0d641d2f7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2883294785774275659, guid: 6fe0d964dd6caea4cb91acd0d641d2f7,
         type: 3}
       propertyPath: m_Intensity
@@ -323,19 +333,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6659582577108369769, guid: 941f36aa23321134391d676c9aedb924,
+    - target: {fileID: 6659582577108369768, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659582577108369782, guid: 941f36aa23321134391d676c9aedb924,
-        type: 3}
-      propertyPath: m_RendererIndex
-      value: -1
+      propertyPath: m_ClearFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6659582577108369782, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
       propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659582577108369782, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: m_RenderShadows
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6713787522008682917, guid: 941f36aa23321134391d676c9aedb924,
@@ -493,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetChromatic: 1
-  TargetBloom: 100
+  TargetBloom: 50
 --- !u!114 &1370895557
 MonoBehaviour:
   m_ObjectHideFlags: 0
