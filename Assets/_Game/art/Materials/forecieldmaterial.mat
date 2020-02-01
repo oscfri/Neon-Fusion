@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: forecieldmaterial
+  m_Shader: {fileID: -6465566751694194690, guid: 6c2091c5634bb0a4a922bde8dafb10ff,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_8250588D:
+        m_Texture: {fileID: 2800000, guid: b47119a6e785fe14f8fd750ecec5fbe6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8C5AB9CF:
+        m_Texture: {fileID: 2800000, guid: b955dd3a935ba1c4ba7a353594051c4d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_231C08A1: 0
+    - Vector1_2EE0977A: 0
+    - Vector1_9B140170: 0.1
+    - Vector1_B12AEDD5: -0.1
+    m_Colors:
+    - Color_4358042F: {r: 0.6650944, g: 0.9689811, b: 1, a: 0}
