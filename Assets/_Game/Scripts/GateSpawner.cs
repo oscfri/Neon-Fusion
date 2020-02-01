@@ -13,6 +13,13 @@ public class GateSpawner : MonoBehaviour
     {
         beatCounter = FindObjectOfType<BeatCounter>();
         beatCounter.Attach(InvokeBeat);
+
+    }
+
+    public void SetMaterial(Material mat)
+    {
+        MeshRenderer renderer = GetComponentInChildren<MeshRenderer>();
+        renderer.material = mat;
     }
 
     void OnDestroy()

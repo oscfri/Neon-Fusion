@@ -29,6 +29,9 @@ public class ArrowGenerator : MonoBehaviour
         arrow.SetArrowChecker(ArrowChecker);
         arrow.transform.parent = gateSpawner.LastGateTransform;
 
+        MeshRenderer renderer = arrow.GetComponentInChildren<MeshRenderer>();
+
+        gateSpawner.SetMaterial(renderer.material);
         ListSpawnedArrows.Add(arrow);
     }
 

@@ -25,6 +25,7 @@ public class Arrow : MonoBehaviour
     private float zInside;
     private float zOutside;
 
+
     public void SetArrowChecker(ArrowChecker checker)
     {
         state = ArrowState.idle;
