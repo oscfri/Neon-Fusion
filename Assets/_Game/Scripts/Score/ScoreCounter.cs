@@ -15,6 +15,7 @@ public class ScoreCounter : MonoBehaviour
     private float multiplierAdd = 0.1f;
 
     private UIScoreText UIScoreText;
+    private ScoreSound scoreSound;
 
     public CameraShake cameraShakeP1;
     public CameraShake cameraShakeP2;
@@ -22,6 +23,7 @@ public class ScoreCounter : MonoBehaviour
     private void Start()
     {
         UIScoreText = FindObjectOfType<UIScoreText>();
+        scoreSound = FindObjectOfType<ScoreSound>();
     }
 
     public void AddScore(Direction direction, int playerNr)
@@ -32,13 +34,15 @@ public class ScoreCounter : MonoBehaviour
         if (playerNr == 1)
         {
             ScoreP1 += amount;
-            cameraShakeP1.Shake();
+            cameraShakeP1.Shake(multiplier);
         }
         else
         {
             ScoreP2 += amount;
-            cameraShakeP1.Shake();
+            cameraShakeP1.Shake(multiplier);
         }
+
+        scoreSound.PlaySound(direction);
         UIScoreText.SetScore(Score, multiplier);
     }
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ColorSelector : MonoBehaviour
 {
@@ -10,17 +11,20 @@ public class ColorSelector : MonoBehaviour
     public Material ColorSpecial;
     public Material ColorNone;
 
-    MeshRenderer render;
+    MeshRenderer[] render;
 
     // Use this for initialization
     void Start()
     {
-        render = GetComponentInChildren<MeshRenderer>();
+        render = GetComponentsInChildren<MeshRenderer>();
     }
 
     public void ChangeDirection(Direction dir)
     {
-        render.material = GetMat(dir);
+        foreach (var rend in render)
+        {
+            rend.material = GetMat(dir);
+        }
     }
 
     private Material GetMat(Direction direction)
