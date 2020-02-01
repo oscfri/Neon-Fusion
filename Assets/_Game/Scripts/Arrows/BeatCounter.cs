@@ -1,26 +1,41 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Events;
+using System.Collections.Generic;
 
 public class BeatCounter : MonoBehaviour
 {
     public int BeatsForShort = 1;
     public int BeatsForLong = 2;
 
-    private MusicPlayer musicPlayer;
-    public GateSpawner gateSpawnerP1;
-    public GateSpawner gateSpawnerP2;
+    private int beat;
+    BeatEvent beater;
 
-    // Use this for initialization
-    void Start()
+    void Awake()
     {
-        musicPlayer = FindObjectOfType<MusicPlayer>();
+        beater = new BeatEvent();
+    }
+
+    public void Attach(UnityAction<bool> action)
+    {
+        beater.AddListener(action);
+    }
+
+    public void Release(UnityAction<bool> action)
+    {
+        beater.RemoveListener(action);
     }
 
     public void Beat()
     {
-        musicPlayer.Beat();
-        gateSpawnerP1.SpawnGate();
-        gateSpawnerP2.SpawnGate();
+        if (beat % BeatsForLong == 0)
+        {
+            beater.Invoke(true);
+        }
+        else if (beat % BeatsForShort == 0)
+        {
+            beater.Invoke(false);
+        }
+        beat += 1;
     }
 }

@@ -5,6 +5,7 @@ public class MusicPlayer : MonoBehaviour
 {
     private AudioSource audioSource;
     private BeatCountdown beatCountdown;
+    private BeatCounter beatCounter;
     private MusicSong musicSongP1;
     private MusicSong musicSongP2;
     public ArrowGenerator arrowGeneratorP1;
@@ -15,6 +16,13 @@ public class MusicPlayer : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         beatCountdown = FindObjectOfType<BeatCountdown>();
+        beatCounter = FindObjectOfType<BeatCounter>();
+        beatCounter.Attach(InvokeBeat);
+    }
+
+    void OnDestroy()
+    {
+        beatCounter.Release(InvokeBeat);
     }
 
     public void Play(MusicSong musicSongP1, MusicSong musicSongP2)
@@ -36,7 +44,7 @@ public class MusicPlayer : MonoBehaviour
         beatCountdown.BeatStop();
     }
 
-    public void Beat()
+    void InvokeBeat(bool isLong)
     {
         BeatPlayer(musicSongP1, arrowGeneratorP1);
         BeatPlayer(musicSongP2, arrowGeneratorP2);
