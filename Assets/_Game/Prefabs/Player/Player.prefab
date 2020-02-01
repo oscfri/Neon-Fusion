@@ -69,17 +69,17 @@ PrefabInstance:
     - target: {fileID: 8441928726899939218, guid: c6fc3e77b6d2101449369b4817e33be6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 2.98
       objectReference: {fileID: 0}
     - target: {fileID: 8441928726899939218, guid: c6fc3e77b6d2101449369b4817e33be6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.35
       objectReference: {fileID: 0}
     - target: {fileID: 8441928726899939218, guid: c6fc3e77b6d2101449369b4817e33be6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.023716621
+      value: 0.0669098
       objectReference: {fileID: 0}
     - target: {fileID: 8441928726899939218, guid: c6fc3e77b6d2101449369b4817e33be6,
         type: 3}
@@ -94,7 +94,7 @@ PrefabInstance:
     - target: {fileID: 8441928726899939218, guid: c6fc3e77b6d2101449369b4817e33be6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9997188
+      value: 0.99775904
       objectReference: {fileID: 0}
     - target: {fileID: 8441928726899939218, guid: c6fc3e77b6d2101449369b4817e33be6,
         type: 3}
@@ -104,7 +104,7 @@ PrefabInstance:
     - target: {fileID: 8441928726899939218, guid: c6fc3e77b6d2101449369b4817e33be6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.7180002
+      value: 7.6730003
       objectReference: {fileID: 0}
     - target: {fileID: 8441928726899939218, guid: c6fc3e77b6d2101449369b4817e33be6,
         type: 3}
@@ -399,6 +399,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bcf8e68ac9eaa69439ea4d458399b6e8, type: 2}
+    - target: {fileID: 5508995136677415023, guid: 02dd8b436fd147b4f898c7757f0ca154,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508995136677415023, guid: 02dd8b436fd147b4f898c7757f0ca154,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7885680635641181156, guid: 02dd8b436fd147b4f898c7757f0ca154,
         type: 3}
       propertyPath: m_LocalPosition.x
