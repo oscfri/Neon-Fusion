@@ -107,6 +107,11 @@ PrefabInstance:
       propertyPath: ListDirections.Array.data[10]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
+        type: 3}
+      propertyPath: song
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ed12ff51936c0149992ef772f5d4b65, type: 3}
     - target: {fileID: 2448696223699900155, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: m_LocalPosition.x
