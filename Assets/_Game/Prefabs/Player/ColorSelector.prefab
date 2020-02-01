@@ -127,5 +127,5 @@ MonoBehaviour:
   ColorRight: {fileID: 2100000, guid: bcf8e68ac9eaa69439ea4d458399b6e8, type: 2}
   ColorUp: {fileID: 2100000, guid: 204d237429a0f6240b8391a28d9bed6d, type: 2}
   ColorDown: {fileID: 2100000, guid: e04c42e9f168d5743860539e06b989d2, type: 2}
-  ColorSpecial: {fileID: 2100000, guid: bcf8e68ac9eaa69439ea4d458399b6e8, type: 2}
+  ColorSpecial: {fileID: 2100000, guid: 2fca8364699f65d488b465940d524810, type: 2}
   ColorNone: {fileID: 2100000, guid: 6cf0c64da1a9285499b5e36449a86a64, type: 2}
