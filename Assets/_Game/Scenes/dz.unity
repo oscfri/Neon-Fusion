@@ -383,7 +383,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4760444014168189332}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &883160796
+--- !u!82 &883160798
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -927,10 +927,20 @@ PrefabInstance:
       propertyPath: Zoutside
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8860754106348241609, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: Zinside
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8912630079932289562, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
       propertyPath: Zoutside
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912630079932289562, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: Zinside
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 941f36aa23321134391d676c9aedb924, type: 3}

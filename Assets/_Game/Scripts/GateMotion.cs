@@ -30,4 +30,4 @@ public class GateMotion : MonoBehaviour
             Destroy(gameObject);
         }
     }
-}
+}   
