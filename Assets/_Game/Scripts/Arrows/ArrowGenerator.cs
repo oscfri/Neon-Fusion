@@ -31,7 +31,7 @@ public class ArrowGenerator : MonoBehaviour
 
         MeshRenderer renderer = arrow.GetComponentInChildren<MeshRenderer>();
 
-        gateSpawner.SetMaterial(renderer.material);
+        gateSpawner.SetMaterial(renderer.material, arrow.color);
         ListSpawnedArrows.Add(arrow);
     }
 
