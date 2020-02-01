@@ -67,6 +67,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: arrow_left_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8518596787144981499, guid: cc6a8c99fd78016418939563a97da8ba,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c087ec2c94d87bd4dbe9672569651858, type: 2}
+    - target: {fileID: 8518596787144981499, guid: cc6a8c99fd78016418939563a97da8ba,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc6a8c99fd78016418939563a97da8ba, type: 3}
 --- !u!1001 &3423820834149376551
@@ -135,6 +145,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694785460934781496, guid: 6ee15255a7202664caac11d7a413e670,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9204202172465513792, guid: 6ee15255a7202664caac11d7a413e670,
         type: 3}

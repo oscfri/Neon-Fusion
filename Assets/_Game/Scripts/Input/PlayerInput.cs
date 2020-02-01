@@ -15,16 +15,25 @@ public class PlayerInput : MonoBehaviour
     string KeyRight;
     string KeySpecial;
 
+    private ColorSelector colorSelector;
+
+
     public Direction Direction { get; private set; }
 
     void Start()
     {
+        colorSelector = GetComponentInChildren<ColorSelector>();
         SetNames();
     }
 
     private void Update()
     {
         Direction = GetDirectionPressed();
+
+        if (Direction != Direction.none)
+        {
+            colorSelector.ChangeDirection(Direction);
+        }
     }
 
     private void SetNames()
