@@ -5,12 +5,14 @@ using UnityEngine;
 public class GateMotion : MonoBehaviour
 {
     public float Speed;
-    private const float RemoveAtZ = -10f;
+    private const float RemoveAtZ = -0.2f;
+    private bool hasScored = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private ScoreCounter scoreCounter;
+
+    public void SetScoreCounter(ScoreCounter scoreCounter)
     {
-        
+        this.scoreCounter = scoreCounter;
     }
 
     // Update is called once per frame
@@ -20,6 +22,11 @@ public class GateMotion : MonoBehaviour
 
         if (transform.position.z <= RemoveAtZ)
         {
+            if (scoreCounter != null && !hasScored)
+            {
+                hasScored = true;
+                scoreCounter.FailedScore();
+            }
             Destroy(gameObject);
         }
     }

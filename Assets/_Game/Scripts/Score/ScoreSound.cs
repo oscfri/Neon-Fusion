@@ -8,6 +8,7 @@ public class ScoreSound : MonoBehaviour
     public AudioClip soundUp;
     public AudioClip soundDown;
     public AudioClip soundSpecial;
+    public AudioClip soundFail;
 
     public ScoreSoundAudio ScoreSoundAudio;
 
@@ -29,6 +30,9 @@ public class ScoreSound : MonoBehaviour
                 break;
             case Direction.special:
                 PlaySound(soundSpecial);
+                break;
+            case Direction.none:
+                PlaySound(soundFail);
                 break;
         }
     }

@@ -48,5 +48,6 @@ MonoBehaviour:
   soundUp: {fileID: 8300000, guid: acacbda7ea10df6458d06461b4d326fb, type: 3}
   soundDown: {fileID: 8300000, guid: b552bcf91aad5684dbefbd253da22f71, type: 3}
   soundSpecial: {fileID: 8300000, guid: 43d1ca3f42c3a0845a4c5df8af826704, type: 3}
+  soundFail: {fileID: 8300000, guid: 2b0247b46ccf01f469d7c0781497e2ab, type: 3}
   ScoreSoundAudio: {fileID: 2465271453225407341, guid: c02c275df99a23e41842028f1ce4306f,
     type: 3}

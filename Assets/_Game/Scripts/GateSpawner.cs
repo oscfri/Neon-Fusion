@@ -4,6 +4,7 @@ using System.Collections;
 public class GateSpawner : MonoBehaviour
 {
     public GameObject Gate;
+    private ScoreCounter scoreCounter;
 
     public Transform LastGateTransform { get; private set; }
 
@@ -12,14 +13,15 @@ public class GateSpawner : MonoBehaviour
     void Start()
     {
         beatCounter = FindObjectOfType<BeatCounter>();
+        scoreCounter = FindObjectOfType<ScoreCounter>();
         beatCounter.Attach(InvokeBeat);
-
     }
 
     public void SetMaterial(Material mat, Color color)
     {
         MeshRenderer renderer = LastGateTransform.GetComponentInChildren<MeshRenderer>();
         Light light = LastGateTransform.GetComponentInChildren<Light>();
+        LastGateTransform.GetComponent<GateMotion>().SetScoreCounter(scoreCounter);
         light.color = color;
         renderer.material = mat;
     }

@@ -54,6 +54,8 @@ public class ScoreCounter : MonoBehaviour
     public void FailedScore()
     {
         multiplier = 1.0f;
+        scoreSound.PlaySound(Direction.none);
+        UIScoreText.SetScore(Score, multiplier);
     }
 
     private void IncreaseMultiplier()
