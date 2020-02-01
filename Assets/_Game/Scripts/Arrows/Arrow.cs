@@ -73,7 +73,10 @@ public class Arrow : MonoBehaviour
     public void Scored(ParticleSystem explosion)
     {
         state = ArrowState.destroyed;
-        Instantiate(explosion, transform);
+        if (explosion)
+        {
+            Instantiate(explosion, transform);
+        }
         Destroy(gameObject.transform.parent.gameObject);
         Destroy(gameObject);
     }
