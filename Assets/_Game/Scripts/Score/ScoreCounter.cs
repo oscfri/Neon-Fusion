@@ -7,15 +7,24 @@ public class ScoreCounter : MonoBehaviour
     public float ScoreP1 = 0;
     public float ScoreP2 = 0;
 
-    private float scorePerHit = 1f;
+    private float scorePerHit = 10f;
     private float scorePerMultiplier = 10f;
     private float scoreCompletedTower = 40f;
 
     private float multiplier = 1f;
     private float multiplierAdd = 0.1f;
 
+    private UIScoreText UIScoreText;
+    private ScoreSound scoreSound;
+
     public CameraShake cameraShakeP1;
     public CameraShake cameraShakeP2;
+
+    private void Start()
+    {
+        UIScoreText = FindObjectOfType<UIScoreText>();
+        scoreSound = FindObjectOfType<ScoreSound>();
+    }
 
     public void AddScore(Direction direction, int playerNr)
     {
@@ -25,16 +34,16 @@ public class ScoreCounter : MonoBehaviour
         if (playerNr == 1)
         {
             ScoreP1 += amount;
-            Debug.Log("P1 Score: " + ScoreP1);
-            cameraShakeP1.Shake();
+            cameraShakeP1.Shake(multiplier);
         }
         else
         {
             ScoreP2 += amount;
-            Debug.Log("P2 Score: " + ScoreP2);
-            cameraShakeP1.Shake();
+            cameraShakeP1.Shake(multiplier);
         }
-        Debug.Log("Score: " + Score);
+
+        scoreSound.PlaySound(direction);
+        UIScoreText.SetScore(Score, multiplier);
     }
 
     public void AddScoreCompletedTower()
