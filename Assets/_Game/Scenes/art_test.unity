@@ -433,6 +433,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Factory
       objectReference: {fileID: 0}
+    - target: {fileID: 6976876421974561277, guid: 01a4bdf0eb660884b994de3bc314388d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.87
+      objectReference: {fileID: 0}
     - target: {fileID: 6976876421974561279, guid: 01a4bdf0eb660884b994de3bc314388d,
         type: 3}
       propertyPath: m_IsActive
