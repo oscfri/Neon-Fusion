@@ -93,7 +93,17 @@ ModelImporter:
   - first:
       74: 7121487004675976164
     second: Block 27
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 3b52f313d342944379778dec8f3b37e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: neon_material
+    second: {fileID: 2100000, guid: 3b52f313d342944379778dec8f3b37e8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
