@@ -130,12 +130,12 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[12]
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[13]
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
@@ -150,7 +150,7 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[16]
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}

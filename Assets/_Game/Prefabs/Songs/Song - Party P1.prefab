@@ -30,7 +30,7 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[1]
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
@@ -40,22 +40,22 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[3]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
-        type: 3}
-      propertyPath: ListBeats.Array.data[4]
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
-        type: 3}
-      propertyPath: ListBeats.Array.data[5]
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
+      propertyPath: ListBeats.Array.data[4]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
+        type: 3}
+      propertyPath: ListBeats.Array.data[5]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
+        type: 3}
       propertyPath: ListBeats.Array.data[6]
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
@@ -65,17 +65,17 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[8]
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[9]
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[10]
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
