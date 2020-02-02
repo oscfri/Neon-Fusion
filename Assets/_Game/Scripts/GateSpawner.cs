@@ -35,6 +35,11 @@ public class GateSpawner : MonoBehaviour
         beatCounter.Release(InvokeBeat);
     }
 
+    public void StopSpawning()
+    {
+        isAllowedToSpawn = false;
+    }
+
     void InvokeBeat(bool isLong)
     {
         if (!isAllowedToSpawn) return;
