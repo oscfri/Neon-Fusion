@@ -659,6 +659,26 @@ PrefabInstance:
       propertyPath: ListRenders.Array.data[0]
       value: 
       objectReference: {fileID: 277032922}
+    - target: {fileID: 2692046782351334029, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ColorLeft.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692046782351334029, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ColorLeft.b
+      value: 0.8901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692046782351334029, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ColorRight.g
+      value: 0.09019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692046782351334029, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: ColorRight.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7790888632682170883, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
       propertyPath: m_Name

@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2874ec7125d47c2468f51e930088fa81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColorLeft: {r: 1, g: 0.09019608, b: 0, a: 1}
-  ColorRight: {r: 1, g: 0, b: 0.8901961, a: 1}
+  ColorLeft: {r: 1, g: 0, b: 0.8901961, a: 1}
+  ColorRight: {r: 1, g: 0.09019608, b: 0, a: 1}
   ColorUp: {r: 0, g: 0.49019608, b: 1, a: 1}
   ColorDown: {r: 0.24313726, g: 1, b: 0, a: 1}
   ColorSpecial: {r: 1, g: 0.99607843, b: 0, a: 1}
