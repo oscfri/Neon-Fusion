@@ -17,13 +17,22 @@ public class ArrowGenerator : MonoBehaviour
     [HideInInspector]
     public List<Arrow> ListSpawnedArrows;
 
+    private bool isAllowedToSpawn = true;
+
     void Start()
     {
         ListSpawnedArrows = new List<Arrow>();
     }
 
+    public void StopSpawning()
+    {
+        isAllowedToSpawn = false;
+    }
+
     public void Spawn(Direction direction)
     {
+        if (!isAllowedToSpawn) return;
+
         Arrow type = GetArrowType(direction);
         Arrow arrow = Instantiate(type, transform);
         arrow.SetArrowChecker(ArrowChecker);

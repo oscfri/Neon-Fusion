@@ -9,6 +9,7 @@ public class GateSpawner : MonoBehaviour
     public Transform LastGateTransform { get; private set; }
 
     private BeatCounter beatCounter;
+    private bool isAllowedToSpawn = true;
 
     void Start()
     {
@@ -37,8 +38,16 @@ public class GateSpawner : MonoBehaviour
         // LastGateTransform = spawned.transform;
     }
 
+    public void StopSpawning()
+    {
+        isAllowedToSpawn = false;
+        Debug.Log("Stop spawning gates!");
+    }
+
     void InvokeBeat(bool isLong)
     {
+        if (!isAllowedToSpawn) return;
+
         GameObject spawned = Instantiate(Gate, transform);
         LastGateTransform = spawned.transform;
     }
