@@ -43,4 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2231b404f440f494db4b50fc9de51cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gate: {fileID: 1371811408713085898, guid: 7127770a74e2a417fb3a0e723367414a, type: 3}
+  Gate: {fileID: 1371811408713085892, guid: 7127770a74e2a417fb3a0e723367414a, type: 3}

@@ -27,17 +27,16 @@ public class MusicSong : MonoBehaviour
         currentBeat = 0;
     }
 
-    public Tuple<bool, Direction> GetAndCheckBeat()
+    public Direction GetAndCheckBeat()
     {
-        currentBeat++;
-
+        var direction = Direction.none;
         if (currentBeat >= ListBeats[currentIndex])
         {
             currentBeat = 0;
-            var direction = ListDirections[currentIndex];
+            direction = ListDirections[currentIndex];
             currentIndex++;
-            return Tuple.Create(true, direction);
         }
-        return Tuple.Create(false, Direction.none);
+        currentBeat++;
+        return direction;
     }
 }

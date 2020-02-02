@@ -186,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Active: 1
   TargetIntensity: 8
-  TargetRange: 4
+  TargetRange: 5
 --- !u!114 &5512991996419687642
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -52,10 +52,10 @@ public class MusicPlayer : MonoBehaviour
 
     private void BeatPlayer(MusicSong musicSong, ArrowGenerator arrowGenerator)
     {
-        var spawn = musicSong.GetAndCheckBeat();
-        if (spawn.Item1 == true)
+        var direction = musicSong.GetAndCheckBeat();
+        if (direction != Direction.none)
         {
-            arrowGenerator.Spawn(spawn.Item2);
+            arrowGenerator.Spawn(direction);
 
             if (musicSong.CurrentIndex >= musicSong.ListBeats.Count)
             {
