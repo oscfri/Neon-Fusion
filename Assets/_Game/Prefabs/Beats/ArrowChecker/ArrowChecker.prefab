@@ -43,6 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a9ac12f462a9f42ac9685f7267346c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Explosion: {fileID: 2674345343666507426, guid: 786c8a6569b89429fa27ce759cf43efc,
+    type: 3}
   PlayerInput: {fileID: 0}
   Zinside: -10
   Zoutside: -15

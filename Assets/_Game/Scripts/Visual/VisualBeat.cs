@@ -16,6 +16,7 @@ public class VisualBeat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        LogValue = Mathf.Log(LongValue);
         beatCounter = FindObjectOfType<BeatCounter>();
         beatCounter.Attach(InvokeBeat);
     }
