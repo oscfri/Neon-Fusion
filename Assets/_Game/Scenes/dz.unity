@@ -332,7 +332,7 @@ PrefabInstance:
     - target: {fileID: 2883294785774275653, guid: 6fe0d964dd6caea4cb91acd0d641d2f7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2883294785774275659, guid: 6fe0d964dd6caea4cb91acd0d641d2f7,
         type: 3}
@@ -634,6 +634,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1419912320846872149, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: BeatsForLong
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419912320846872149, guid: 941f36aa23321134391d676c9aedb924,
+        type: 3}
+      propertyPath: BeatsForShort
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2181249228991436661, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
       propertyPath: BeatTime

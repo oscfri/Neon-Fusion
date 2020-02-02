@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512625a0fc92f47e3829917f0ca316fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShortValue: 0.25
+  ShortValue: 0.2
   LongValue: 1
   Decay: 0.1
   LogValue: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetChromatic: 0.5
-  TargetBloom: 20
+  TargetBloom: 8
 --- !u!1 &2883294785774275653
 GameObject:
   m_ObjectHideFlags: 0

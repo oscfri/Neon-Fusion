@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShortValue: 0.2
   LongValue: 0.6
-  Decay: 0.1
+  Decay: 0.01
   LogValue: 0
   Value: 0
 --- !u!1 &8562545710836385483
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShortValue: 0.1
   LongValue: 1
-  Decay: 0.01
+  Decay: 0.005
   LogValue: 0
   Value: 0
 --- !u!1001 &8266779946850761924

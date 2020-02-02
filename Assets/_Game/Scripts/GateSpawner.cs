@@ -18,7 +18,7 @@ public class GateSpawner : MonoBehaviour
         scoreCounter = FindObjectOfType<ScoreCounter>();
         beatCounter.Attach(InvokeBeat);
         float beatTime = FindObjectOfType<BeatCountdown>().BeatTime;
-        gateSpeed = (transform.position.z - 2) / (8 * beatTime);
+        gateSpeed = (transform.position.z - 2) / (16 * beatTime);
     }
 
     public void SetMaterial(Material mat, Color color)
@@ -42,9 +42,12 @@ public class GateSpawner : MonoBehaviour
 
     void InvokeBeat(bool isLong)
     {
-        if (!isAllowedToSpawn) return;
-        GateMotion spawned = Instantiate(Gate, transform);
-        spawned.Speed = gateSpeed;
-        LastGateTransform = spawned.transform;
+        if (isLong)
+        {
+            if (!isAllowedToSpawn) return;
+            GateMotion spawned = Instantiate(Gate, transform);
+            spawned.Speed = gateSpeed;
+            LastGateTransform = spawned.transform;
+        }
     }
 }
