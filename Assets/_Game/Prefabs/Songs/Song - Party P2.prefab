@@ -45,12 +45,12 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[6]
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[8]
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
@@ -100,12 +100,12 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListDirections.Array.data[7]
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListDirections.Array.data[8]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
@@ -145,52 +145,52 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[15]
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[16]
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[17]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[18]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[19]
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[20]
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[21]
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[22]
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[23]
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[24]
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
@@ -225,7 +225,7 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[31]
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
@@ -240,7 +240,7 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[34]
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
@@ -695,7 +695,7 @@ PrefabInstance:
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
       propertyPath: ListBeats.Array.data[7]
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2448696223699900154, guid: 92f3390599afc804f8be653873c32399,
         type: 3}
