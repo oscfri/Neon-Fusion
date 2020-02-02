@@ -7,7 +7,7 @@ public class MusicSong : MonoBehaviour
 {
     public AudioClip song;
     int currentBeat = 0;
-    private int currentIndex = 0;
+    private int currentIndex = 53;
 
     public int CurrentIndex { get { return currentIndex; } }
 
@@ -23,7 +23,7 @@ public class MusicSong : MonoBehaviour
 
     public void Reset()
     {
-        currentIndex = 0;
+        currentIndex = 62; //Default 0!
         currentBeat = 0;
     }
 
