@@ -264,6 +264,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 366873366970577395, guid: 01a4bdf0eb660884b994de3bc314388d,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 851148713531190946, guid: 01a4bdf0eb660884b994de3bc314388d,
         type: 3}
       propertyPath: m_CastShadows
@@ -379,6 +384,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8791296661348616120, guid: 01a4bdf0eb660884b994de3bc314388d,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1997659180}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01a4bdf0eb660884b994de3bc314388d, type: 3}
 --- !u!23 &1997659176 stripped
@@ -402,6 +412,12 @@ MeshRenderer:
 --- !u!23 &1997659179 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2175898914890622803, guid: 01a4bdf0eb660884b994de3bc314388d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1997659175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1997659180 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8648650456084581377, guid: 01a4bdf0eb660884b994de3bc314388d,
     type: 3}
   m_PrefabInstance: {fileID: 1997659175}
   m_PrefabAsset: {fileID: 0}
