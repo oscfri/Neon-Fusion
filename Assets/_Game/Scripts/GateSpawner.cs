@@ -37,6 +37,7 @@ public class GateSpawner : MonoBehaviour
 
     void InvokeBeat(bool isLong)
     {
+        if (!isAllowedToSpawn) return;
         GateMotion spawned = Instantiate(Gate, transform);
         spawned.Speed = gateSpeed;
         LastGateTransform = spawned.transform;
