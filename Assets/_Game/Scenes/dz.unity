@@ -647,7 +647,7 @@ PrefabInstance:
     - target: {fileID: 2181249228991436661, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
       propertyPath: BeatTime
-      value: 0.625
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2628508645841464823, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
