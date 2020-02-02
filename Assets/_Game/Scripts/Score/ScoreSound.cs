@@ -32,7 +32,7 @@ public class ScoreSound : MonoBehaviour
                 PlaySound(soundSpecial);
                 break;
             case Direction.none:
-                PlaySound(soundFail);
+                //PlaySound(soundFail);
                 break;
         }
     }
