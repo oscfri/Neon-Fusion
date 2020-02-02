@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShortValue: 0.2
-  LongValue: 0.8
+  LongValue: 0.6
   Decay: 0.1
   LogValue: 0
   Value: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Active: 1
-  TargetIntensity: 8
+  TargetIntensity: 3
   TargetRange: 5
 --- !u!114 &5512991996419687642
 MonoBehaviour:

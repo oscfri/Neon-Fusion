@@ -6,30 +6,36 @@ public class TetrisBuilder : MonoBehaviour
     public Animator anim;
     private float count = 0f;
     bool shouldPlay = false;
+
+    private int block;
+
     // Use this for initialization
     void Start()
     {
+        var scoreCounter = FindObjectOfType<ScoreCounter>();
+        scoreCounter.Attach(OnScore);
         PlayStart();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (shouldPlay)
+    }
+
+    void OnScore(bool successfulScore)
+    {
+        if (successfulScore)
         {
-            count += Time.deltaTime;
-            if (count >= 120f)
-            {
-                PlayStop();
-            }
+            block += 1;
         }
+        anim.SetInteger("Block", block);
     }
 
     private void PlayStart()
     {
         shouldPlay = true;
-        anim.speed = 0.0097f;
-        anim.Play("build");
+        //anim.speed = 1.0f / 60.0f;
+        anim.Play("Start");
     }
 
     private void PlayStop()
