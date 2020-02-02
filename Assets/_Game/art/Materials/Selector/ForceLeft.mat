@@ -31,7 +31,7 @@ Material:
     m_Floats:
     - Vector1_231C08A1: 0
     - Vector1_2EE0977A: 0
-    - Vector1_9B140170: 0
-    - Vector1_B12AEDD5: 0
+    - Vector1_9B140170: -0.05
+    - Vector1_B12AEDD5: 0.05
     m_Colors:
     - Color_4358042F: {r: 1, g: 0.09019608, b: 0, a: 0}
