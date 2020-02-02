@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class ScoreCounter : MonoBehaviour
 {
@@ -20,10 +21,18 @@ public class ScoreCounter : MonoBehaviour
     public CameraShake cameraShakeP1;
     public CameraShake cameraShakeP2;
 
+    ScoreEvent scoreEvent;
+
     private void Start()
     {
         ScoreText = FindObjectsOfType<ScoreText>();
         scoreSound = FindObjectOfType<ScoreSound>();
+        scoreEvent = new ScoreEvent();
+    }
+
+    public void Attach(UnityAction<bool> action)
+    {
+        scoreEvent.AddListener(action);
     }
 
     public void AddScore(Direction direction, int playerNr)
@@ -41,6 +50,7 @@ public class ScoreCounter : MonoBehaviour
             ScoreP2 += amount;
             cameraShakeP1.Shake(multiplier);
         }
+        scoreEvent.Invoke(true);
         scoreSound.PlaySound(direction);
         SetScoreText();
     }
