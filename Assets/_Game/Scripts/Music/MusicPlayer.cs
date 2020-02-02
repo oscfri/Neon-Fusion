@@ -13,6 +13,8 @@ public class MusicPlayer : MonoBehaviour
     public ArrowGenerator arrowGeneratorP2;
 
     private bool hasStarted = false;
+    private bool isSpawnStopped = false;
+    private float timeStopSpawn = 8f;
 
     // Use this for initialization
     void Start()
@@ -54,11 +56,21 @@ public class MusicPlayer : MonoBehaviour
 
         if (hasStarted)
         {
+            if (!isSpawnStopped && audioSource.time >= audioSource.clip.length - timeStopSpawn)
+            {
+                StopSpawning();
+            }
             if (!audioSource.isPlaying)
             {
                 StopPlay();
             }
         }
+    }
+
+    private void StopSpawning()
+    {
+        isSpawnStopped = true;
+        winScreen.StopSpawning();
     }
 
     public void StopPlay()
