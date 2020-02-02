@@ -3,19 +3,22 @@ using System.Collections;
 
 public class GateSpawner : MonoBehaviour
 {
-    public GameObject Gate;
+    public GateMotion Gate;
     private ScoreCounter scoreCounter;
 
     public Transform LastGateTransform { get; private set; }
 
     private BeatCounter beatCounter;
     private bool isAllowedToSpawn = true;
+    private float gateSpeed;
 
     void Start()
     {
         beatCounter = FindObjectOfType<BeatCounter>();
         scoreCounter = FindObjectOfType<ScoreCounter>();
         beatCounter.Attach(InvokeBeat);
+        float beatTime = FindObjectOfType<BeatCountdown>().BeatTime;
+        gateSpeed = (transform.position.z - 2) / (8 * beatTime);
     }
 
     public void SetMaterial(Material mat, Color color)
@@ -32,23 +35,10 @@ public class GateSpawner : MonoBehaviour
         beatCounter.Release(InvokeBeat);
     }
 
-    public void SpawnGate()
-    {
-        // GameObject spawned = Instantiate(Gate, transform);
-        // LastGateTransform = spawned.transform;
-    }
-
-    public void StopSpawning()
-    {
-        isAllowedToSpawn = false;
-        Debug.Log("Stop spawning gates!");
-    }
-
     void InvokeBeat(bool isLong)
     {
-        if (!isAllowedToSpawn) return;
-
-        GameObject spawned = Instantiate(Gate, transform);
+        GateMotion spawned = Instantiate(Gate, transform);
+        spawned.Speed = gateSpeed;
         LastGateTransform = spawned.transform;
     }
 }

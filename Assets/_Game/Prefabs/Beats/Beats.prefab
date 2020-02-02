@@ -77,7 +77,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeatsForShort: 1
   BeatsForLong: 2
-  BeatCountdown: {fileID: 2541204795142570098}
 --- !u!1 &8314385064680109093
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7dd7c2a7d77084385318a2ba608801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeatTime: 0.25
+  BeatTime: 0.625
   HasReachedTime:
     m_PersistentCalls:
       m_Calls: []

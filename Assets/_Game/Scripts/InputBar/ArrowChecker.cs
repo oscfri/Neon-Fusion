@@ -7,7 +7,7 @@ public class ArrowChecker : MonoBehaviour
     private List<Arrow> ListArrows;
     private ScoreCounter scoreCounter;
 
-    public ParticleSystem Explosion;
+    public GameObject Explosion;
     public PlayerInput PlayerInput;
 
     public float Zinside;
@@ -46,8 +46,11 @@ public class ArrowChecker : MonoBehaviour
                 if (Explosion)
                 {
                     var explosion = Instantiate(Explosion, arrow.transform.position + transform.up * 2.0f, Quaternion.identity, transform);
-                    var rendererComponent = explosion.GetComponent<Renderer>();
-                    rendererComponent.material.SetColor("_EmissionColor", new Color(arrow.color.r, arrow.color.g, arrow.color.b));
+                    var rendererComponents = explosion.GetComponentsInChildren<Renderer>();
+                    foreach (var rendererComponent in rendererComponents)
+                    {
+                        rendererComponent.material.SetColor("_EmissionColor", new Color(arrow.color.r, arrow.color.g, arrow.color.b));
+                    }
                 }
 
                 arrow.Scored();

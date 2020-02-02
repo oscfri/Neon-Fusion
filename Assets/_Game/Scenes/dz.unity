@@ -541,20 +541,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 770993454753873263, guid: 941f36aa23321134391d676c9aedb924,
+    - target: {fileID: 2181249228991436661, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 770993454753873263, guid: 941f36aa23321134391d676c9aedb924,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 770993454753873263, guid: 941f36aa23321134391d676c9aedb924,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
+      propertyPath: BeatTime
+      value: 0.625
       objectReference: {fileID: 0}
     - target: {fileID: 2628508645841464823, guid: 941f36aa23321134391d676c9aedb924,
         type: 3}
