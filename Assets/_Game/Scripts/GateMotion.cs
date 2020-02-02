@@ -5,10 +5,16 @@ using UnityEngine;
 public class GateMotion : MonoBehaviour
 {
     public float Speed;
-    private const float RemoveAtZ = -0.2f;
+    private const float RemoveAtZ = -5f;
     private bool hasScored = false;
 
     private ScoreCounter scoreCounter;
+    private Light lightComponent;
+
+    void Start()
+    {
+        lightComponent = GetComponentInChildren<Light>();
+    }
 
     public void SetScoreCounter(ScoreCounter scoreCounter)
     {
@@ -22,12 +28,19 @@ public class GateMotion : MonoBehaviour
 
         if (transform.position.z <= RemoveAtZ)
         {
+            Destroy(gameObject);
+        }
+        else if (transform.position.z <= 0.0)
+        {
+            var lightBeat = lightComponent.GetComponent<LightBeat>();
+            lightBeat.Active = false;
             if (scoreCounter != null && !hasScored)
             {
                 hasScored = true;
                 scoreCounter.FailedScore();
+                lightComponent.intensity = 0.0f;
             }
-            Destroy(gameObject);
+            // lightComponent.range -= 1.0f * Time.deltaTime;
         }
     }
 }   

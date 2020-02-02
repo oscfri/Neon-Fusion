@@ -17,6 +17,7 @@ public class PlayerInput : MonoBehaviour
 
     private ColorSelector colorSelector;
     private ColorForcefield colorForcefield;
+    private ScoreText scoreText;
 
     public Direction Direction { get; private set; }
 
@@ -24,6 +25,7 @@ public class PlayerInput : MonoBehaviour
     {
         colorSelector = GetComponentInChildren<ColorSelector>();
         colorForcefield = GetComponentInChildren<ColorForcefield>();
+        scoreText = GetComponentInChildren<ScoreText>();
         SetNames();
     }
 
@@ -32,6 +34,7 @@ public class PlayerInput : MonoBehaviour
         Direction = GetDirectionPressed();
         colorSelector.ChangeDirection(Direction);
         colorForcefield.ChangeDirection(Direction);
+        scoreText.ChangeDirection(Direction);
     }
 
     private void SetNames()

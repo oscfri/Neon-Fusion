@@ -14,7 +14,7 @@ public class ScoreCounter : MonoBehaviour
     private float multiplier = 1f;
     private float multiplierAdd = 0.1f;
 
-    private UIScoreText UIScoreText;
+    private ScoreText[] ScoreText;
     private ScoreSound scoreSound;
 
     public CameraShake cameraShakeP1;
@@ -22,7 +22,7 @@ public class ScoreCounter : MonoBehaviour
 
     private void Start()
     {
-        UIScoreText = FindObjectOfType<UIScoreText>();
+        ScoreText = FindObjectsOfType<ScoreText>();
         scoreSound = FindObjectOfType<ScoreSound>();
     }
 
@@ -41,9 +41,8 @@ public class ScoreCounter : MonoBehaviour
             ScoreP2 += amount;
             cameraShakeP1.Shake(multiplier);
         }
-
         scoreSound.PlaySound(direction);
-        UIScoreText.SetScore(Score, multiplier);
+        SetScoreText();
     }
 
     public void AddScoreCompletedTower()
@@ -55,7 +54,16 @@ public class ScoreCounter : MonoBehaviour
     {
         multiplier = 1.0f;
         scoreSound.PlaySound(Direction.none);
-        UIScoreText.SetScore(Score, multiplier);
+
+        SetScoreText();
+    }
+
+    private void SetScoreText()
+    {
+        foreach (var scoreText in ScoreText)
+        {
+            scoreText.SetScore(Score + "%");
+        }
     }
 
     private void IncreaseMultiplier()
