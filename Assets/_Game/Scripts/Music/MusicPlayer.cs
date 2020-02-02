@@ -6,15 +6,19 @@ public class MusicPlayer : MonoBehaviour
     private AudioSource audioSource;
     private BeatCountdown beatCountdown;
     private BeatCounter beatCounter;
-    private MusicSong musicSongP1;
+    public MusicSong musicSongP1;
     private MusicSong musicSongP2;
+    private WinScreen winScreen;
     public ArrowGenerator arrowGeneratorP1;
     public ArrowGenerator arrowGeneratorP2;
+
+    private bool hasStarted = false;
 
     // Use this for initialization
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        winScreen = FindObjectOfType<WinScreen>();
         beatCountdown = FindObjectOfType<BeatCountdown>();
         beatCounter = FindObjectOfType<BeatCounter>();
         beatCounter.Attach(InvokeBeat);
@@ -27,21 +31,43 @@ public class MusicPlayer : MonoBehaviour
 
     public void Play(MusicSong musicSongP1, MusicSong musicSongP2)
     {
-        Debug.Log("PlayMusicSong");
         this.musicSongP1 = musicSongP1;
         this.musicSongP2 = musicSongP2;
         this.musicSongP1.Reset();
         this.musicSongP2.Reset();
         audioSource.clip = musicSongP1.song;
+
+        ScoreCounter scoreCounter = FindObjectOfType<ScoreCounter>();
+        scoreCounter.SetScorePerHit(musicSongP1);
+
         audioSource.Play();
         beatCountdown.BeatStart();
+        hasStarted = true;
+    }
+
+    private void Update()
+    {
+        if (hasStarted && Input.GetButtonDown("Submit"))
+        {
+            StopPlay();
+        }
+
+        if (hasStarted)
+        {
+            if (!audioSource.isPlaying)
+            {
+                StopPlay();
+            }
+        }
     }
 
     public void StopPlay()
     {
+        hasStarted = false;
         audioSource.Stop();
         //Todo: Play elevator idle music here
         beatCountdown.BeatStop();
+        winScreen.Win();
     }
 
     void InvokeBeat(bool isLong)
@@ -59,7 +85,7 @@ public class MusicPlayer : MonoBehaviour
 
             if (musicSong.CurrentIndex >= musicSong.ListBeats.Count)
             {
-                StopPlay();
+                //StopPlay();
             }
         }
     }

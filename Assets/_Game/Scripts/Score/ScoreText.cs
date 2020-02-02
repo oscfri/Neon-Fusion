@@ -20,7 +20,7 @@ public class ScoreText : MonoBehaviour
 
     public void SetScore(string score)
     {
-        this.text.text = score.ToString();
+        this.text.text = score;
     }
 
     public void ChangeDirection(Direction dir)

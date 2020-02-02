@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7885680635641181156}
   - component: {fileID: 5874005835006422588}
+  - component: {fileID: 1613539808673701184}
   m_Layer: 0
   m_Name: ColorSelector
   m_TagString: Untagged
@@ -130,6 +131,18 @@ MonoBehaviour:
   ColorDown: {fileID: 2100000, guid: e04c42e9f168d5743860539e06b989d2, type: 2}
   ColorSpecial: {fileID: 2100000, guid: 2fca8364699f65d488b465940d524810, type: 2}
   ColorNone: {fileID: 2100000, guid: 6cf0c64da1a9285499b5e36449a86a64, type: 2}
+--- !u!114 &1613539808673701184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8997178986542556750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2310faacf1cadef49b2b1b21c856c8c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2037653274020040786
 PrefabInstance:
   m_ObjectHideFlags: 0

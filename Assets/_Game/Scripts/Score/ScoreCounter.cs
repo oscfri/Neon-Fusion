@@ -10,7 +10,6 @@ public class ScoreCounter : MonoBehaviour
 
     private float scorePerHit = 10f;
     private float scorePerMultiplier = 10f;
-    private float scoreCompletedTower = 40f;
 
     private float multiplier = 1f;
     private float multiplierAdd = 0.1f;
@@ -35,6 +34,15 @@ public class ScoreCounter : MonoBehaviour
         scoreEvent.AddListener(action);
     }
 
+    public void SetScorePerHit(MusicSong song)
+    {
+        var amount = song.ListBeats.Count * 2;
+        scorePerHit = 100f / amount;
+        scorePerMultiplier = scorePerHit;
+
+        Debug.Log("Score per hit: " + scorePerHit);
+    }
+
     public void AddScore(Direction direction, int playerNr)
     {
         var amount = GetScore(direction);
@@ -55,24 +63,29 @@ public class ScoreCounter : MonoBehaviour
         SetScoreText();
     }
 
-    public void AddScoreCompletedTower()
-    {
-        Score += scoreCompletedTower;
-    }
-
     public void FailedScore()
     {
         multiplier = 1.0f;
         scoreSound.PlaySound(Direction.none);
 
-        SetScoreText();
+        //SetScoreText();
+    }
+
+    public void DisplayHighscore()
+    {
+        foreach (var scoreText in ScoreText)
+        {
+            scoreText.SetScore(" " + Score.ToString("0.0") + "%"
+                + "\nP1: " + ScoreP1.ToString("0.0") + "%"
+                + "\nP2: " + ScoreP2.ToString("0.0") + "%");
+        }
     }
 
     private void SetScoreText()
     {
         foreach (var scoreText in ScoreText)
         {
-            scoreText.SetScore(Score + "%");
+            scoreText.SetScore(" " + Score.ToString("0.0") + "%");
         }
     }
 

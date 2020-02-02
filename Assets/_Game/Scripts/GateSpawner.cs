@@ -9,6 +9,7 @@ public class GateSpawner : MonoBehaviour
     public Transform LastGateTransform { get; private set; }
 
     private BeatCounter beatCounter;
+    private bool isAllowedToSpawn = true;
     private float gateSpeed;
 
     void Start()
@@ -34,8 +35,14 @@ public class GateSpawner : MonoBehaviour
         beatCounter.Release(InvokeBeat);
     }
 
+    public void StopSpawning()
+    {
+        isAllowedToSpawn = false;
+    }
+
     void InvokeBeat(bool isLong)
     {
+        if (!isAllowedToSpawn) return;
         GateMotion spawned = Instantiate(Gate, transform);
         spawned.Speed = gateSpeed;
         LastGateTransform = spawned.transform;
