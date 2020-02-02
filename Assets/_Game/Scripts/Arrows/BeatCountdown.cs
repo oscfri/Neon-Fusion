@@ -15,6 +15,7 @@ public class BeatCountdown : MonoBehaviour
 
     void Start()
     {
+        current = BeatTime;
     }
 
     public void BeatStart()
