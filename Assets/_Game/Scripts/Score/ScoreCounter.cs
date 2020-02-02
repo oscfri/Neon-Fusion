@@ -36,7 +36,7 @@ public class ScoreCounter : MonoBehaviour
 
     public void SetScorePerHit(MusicSong song)
     {
-        var amount = song.ListBeats.Count * 2;
+        var amount = song.ListBeats.Count;
         scorePerHit = 100f / amount;
         scorePerMultiplier = scorePerHit;
 
