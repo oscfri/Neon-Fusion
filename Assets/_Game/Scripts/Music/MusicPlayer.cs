@@ -72,8 +72,11 @@ public class MusicPlayer : MonoBehaviour
 
     void InvokeBeat(bool isLong)
     {
-        BeatPlayer(musicSongP1, arrowGeneratorP1);
-        BeatPlayer(musicSongP2, arrowGeneratorP2);
+        if (isLong)
+        {
+            BeatPlayer(musicSongP1, arrowGeneratorP1);
+            BeatPlayer(musicSongP2, arrowGeneratorP2);
+        }
     }
 
     private void BeatPlayer(MusicSong musicSong, ArrowGenerator arrowGenerator)

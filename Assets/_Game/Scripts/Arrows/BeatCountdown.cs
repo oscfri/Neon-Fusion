@@ -28,7 +28,7 @@ public class BeatCountdown : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (!hasStarted) return;
 
@@ -41,7 +41,7 @@ public class BeatCountdown : MonoBehaviour
 
     private void ReachedTime()
     {
-        current = BeatTime;
+        current += BeatTime;
         HasReachedTime.Invoke();
     }
 }
