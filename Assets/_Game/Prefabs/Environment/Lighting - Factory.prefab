@@ -79,8 +79,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31041558616a44829e982a566f98fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetChromatic: 0.5
-  TargetBloom: 8
+  TargetChromatic: 0.05
+  TargetBloom: 15
 --- !u!1 &2883294785774275653
 GameObject:
   m_ObjectHideFlags: 0
