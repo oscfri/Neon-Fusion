@@ -7,23 +7,17 @@ public class MusicSong : MonoBehaviour
 {
     public AudioClip song;
     int currentBeat = 0;
-    private int currentIndex = 53;
+    private int currentIndex = 0;
 
     public int CurrentIndex { get { return currentIndex; } }
 
     public List<int> ListBeats; //Beats required to spawn
     public List<Direction> ListDirections; //Beats
 
-    //public List<Tuple<int, Direction>> ListBeats;
-
-    void Start()
-    {
-        
-    }
 
     public void Reset()
     {
-        currentIndex = 62; //Default 0!
+        currentIndex = 0; //Default 0!
         currentBeat = 0;
     }
 

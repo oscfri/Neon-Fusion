@@ -10,7 +10,7 @@ public class WinScreen : MonoBehaviour
         scoreMovers = FindObjectsOfType<ScoreTextMoverUp>();
     }
 
-    private void StopSpawning()
+    public void StopSpawning()
     {
         ArrowGenerator[] arrowGenerators = FindObjectsOfType<ArrowGenerator>();
         foreach (ArrowGenerator generator in arrowGenerators)
@@ -27,8 +27,6 @@ public class WinScreen : MonoBehaviour
 
     public void Win()
     {
-        StopSpawning();
-
         foreach(ScoreTextMoverUp mover in scoreMovers)
         {
             mover.PlayMovement();
